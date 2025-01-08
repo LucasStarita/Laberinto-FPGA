@@ -1,0 +1,10 @@
+PLL_Name	clockgeneral:inst17|altpll:altpll_component|clockgeneral_altpll:auto_generated|pll1
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+
+PLL_Name	pllauto:inst|altpll:altpll_component|pllauto_altpll:auto_generated|pll1
+PLLJITTER	51
+PLLSPEmax	84
+PLLSPEmin	-53
+

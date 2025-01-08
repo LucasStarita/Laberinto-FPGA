@@ -1,0 +1,383 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/29/2024 18:32:52"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    conexioooon
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module conexioooon_vlg_sample_tst(
+	clock,
+	dir_min,
+	fin_giro,
+	orientacion,
+	pared_delante,
+	reset,
+	sampler_tx
+);
+input  clock;
+input [1:0] dir_min;
+input  fin_giro;
+input [1:0] orientacion;
+input  pared_delante;
+input  reset;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clock or dir_min or fin_giro or orientacion or pared_delante or reset)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module conexioooon_vlg_check_tst (
+	FW,
+	giro,
+	izq_der,
+	prioridad,
+	pulso_check,
+	sampler_rx
+);
+input  FW;
+input  giro;
+input  izq_der;
+input  prioridad;
+input  pulso_check;
+input sampler_rx;
+
+reg  FW_expected;
+reg  giro_expected;
+reg  izq_der_expected;
+reg  prioridad_expected;
+reg  pulso_check_expected;
+
+reg  FW_prev;
+reg  giro_prev;
+reg  izq_der_prev;
+reg  prioridad_prev;
+reg  pulso_check_prev;
+
+reg  FW_expected_prev;
+reg  giro_expected_prev;
+reg  izq_der_expected_prev;
+reg  prioridad_expected_prev;
+reg  pulso_check_expected_prev;
+
+reg  last_FW_exp;
+reg  last_giro_exp;
+reg  last_izq_der_exp;
+reg  last_prioridad_exp;
+reg  last_pulso_check_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:5] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 5'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	FW_prev = FW;
+	giro_prev = giro;
+	izq_der_prev = izq_der;
+	prioridad_prev = prioridad;
+	pulso_check_prev = pulso_check;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	FW_expected_prev = FW_expected;
+	giro_expected_prev = giro_expected;
+	izq_der_expected_prev = izq_der_expected;
+	prioridad_expected_prev = prioridad_expected;
+	pulso_check_expected_prev = pulso_check_expected;
+end
+
+
+
+// expected FW
+initial
+begin
+	FW_expected = 1'bX;
+end 
+
+// expected giro
+initial
+begin
+	giro_expected = 1'bX;
+end 
+
+// expected izq_der
+initial
+begin
+	izq_der_expected = 1'bX;
+end 
+
+// expected prioridad
+initial
+begin
+	prioridad_expected = 1'bX;
+end 
+
+// expected pulso_check
+initial
+begin
+	pulso_check_expected = 1'bX;
+end 
+// generate trigger
+always @(FW_expected or FW or giro_expected or giro or izq_der_expected or izq_der or prioridad_expected or prioridad or pulso_check_expected or pulso_check)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected FW = %b | expected giro = %b | expected izq_der = %b | expected prioridad = %b | expected pulso_check = %b | ",FW_expected_prev,giro_expected_prev,izq_der_expected_prev,prioridad_expected_prev,pulso_check_expected_prev);
+	$display("| real FW = %b | real giro = %b | real izq_der = %b | real prioridad = %b | real pulso_check = %b | ",FW_prev,giro_prev,izq_der_prev,prioridad_prev,pulso_check_prev);
+`endif
+	if (
+		( FW_expected_prev !== 1'bx ) && ( FW_prev !== FW_expected_prev )
+		&& ((FW_expected_prev !== last_FW_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port FW :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", FW_expected_prev);
+		$display ("     Real value = %b", FW_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_FW_exp = FW_expected_prev;
+	end
+	if (
+		( giro_expected_prev !== 1'bx ) && ( giro_prev !== giro_expected_prev )
+		&& ((giro_expected_prev !== last_giro_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port giro :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", giro_expected_prev);
+		$display ("     Real value = %b", giro_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_giro_exp = giro_expected_prev;
+	end
+	if (
+		( izq_der_expected_prev !== 1'bx ) && ( izq_der_prev !== izq_der_expected_prev )
+		&& ((izq_der_expected_prev !== last_izq_der_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port izq_der :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", izq_der_expected_prev);
+		$display ("     Real value = %b", izq_der_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_izq_der_exp = izq_der_expected_prev;
+	end
+	if (
+		( prioridad_expected_prev !== 1'bx ) && ( prioridad_prev !== prioridad_expected_prev )
+		&& ((prioridad_expected_prev !== last_prioridad_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port prioridad :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", prioridad_expected_prev);
+		$display ("     Real value = %b", prioridad_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_prioridad_exp = prioridad_expected_prev;
+	end
+	if (
+		( pulso_check_expected_prev !== 1'bx ) && ( pulso_check_prev !== pulso_check_expected_prev )
+		&& ((pulso_check_expected_prev !== last_pulso_check_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port pulso_check :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", pulso_check_expected_prev);
+		$display ("     Real value = %b", pulso_check_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_pulso_check_exp = pulso_check_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module conexioooon_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clock;
+reg [1:0] dir_min;
+reg fin_giro;
+reg [1:0] orientacion;
+reg pared_delante;
+reg reset;
+// wires                                               
+wire FW;
+wire giro;
+wire izq_der;
+wire prioridad;
+wire pulso_check;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+conexioooon i1 (
+// port map - connection between master ports and signals/registers   
+	.clock(clock),
+	.dir_min(dir_min),
+	.fin_giro(fin_giro),
+	.FW(FW),
+	.giro(giro),
+	.izq_der(izq_der),
+	.orientacion(orientacion),
+	.pared_delante(pared_delante),
+	.prioridad(prioridad),
+	.pulso_check(pulso_check),
+	.reset(reset)
+);
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #5000 1'b1;
+	#5000;
+end 
+// dir_min[ 1 ]
+initial
+begin
+	dir_min[1] = 1'b0;
+	dir_min[1] = #200000 1'b1;
+	dir_min[1] = #200000 1'b0;
+end 
+// dir_min[ 0 ]
+initial
+begin
+	dir_min[0] = 1'b0;
+	dir_min[0] = #200000 1'b1;
+	dir_min[0] = #200000 1'b0;
+end 
+
+// fin_giro
+initial
+begin
+	fin_giro = 1'b0;
+	fin_giro = #160000 1'b1;
+	fin_giro = #10000 1'b0;
+	fin_giro = #210000 1'b1;
+	fin_giro = #20000 1'b0;
+	fin_giro = #270000 1'b1;
+	fin_giro = #10000 1'b0;
+	fin_giro = #180000 1'b1;
+	fin_giro = #10000 1'b0;
+end 
+// orientacion[ 1 ]
+initial
+begin
+	orientacion[1] = 1'b0;
+end 
+// orientacion[ 0 ]
+initial
+begin
+	orientacion[0] = 1'b0;
+	orientacion[0] = #210000 1'b1;
+end 
+
+// pared_delante
+initial
+begin
+	pared_delante = 1'b0;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+	reset = #50000 1'b0;
+end 
+
+conexioooon_vlg_sample_tst tb_sample (
+	.clock(clock),
+	.dir_min(dir_min),
+	.fin_giro(fin_giro),
+	.orientacion(orientacion),
+	.pared_delante(pared_delante),
+	.reset(reset),
+	.sampler_tx(sampler)
+);
+
+conexioooon_vlg_check_tst tb_out(
+	.FW(FW),
+	.giro(giro),
+	.izq_der(izq_der),
+	.prioridad(prioridad),
+	.pulso_check(pulso_check),
+	.sampler_rx(sampler)
+);
+endmodule
+

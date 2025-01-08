@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_2x1 is
+    port (
+        sel : in std_logic;   -- Señal de selección (1 bit)
+        d0, d1 : in std_logic; -- Entradas de datos (1 bit cada una)
+        y : out std_logic      -- Salida del MUX
+    );
+end mux_2x1;
+
+architecture Behavioral of mux_2x1 is
+begin
+    process(sel, d0, d1)
+    begin
+        if sel = '0' then
+            y <= d0; -- Si sel es 0, la salida es d0
+        else
+            y <= d1; -- Si sel es 1, la salida es d1
+        end if;
+    end process;
+end Behavioral;

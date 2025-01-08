@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Sorteito\Documents\GitHub\TP-FPGA\Main\simulation\qsim
+vcontador_7600
+Z1 !s100 RZK4nOEWL2ej4JNYAA9Ql3
+Z2 IT[2DH0=oF;A>F2h6lAjPi1
+Z3 VI2DNi9:f3jmA^ZdKm;35H3
+Z4 dC:\Users\Sorteito\Documents\GitHub\TP-FPGA\Main\simulation\qsim
+Z5 w1731620499
+Z6 8ADC_tutorial.vo
+Z7 FADC_tutorial.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ADC_tutorial.vo|
+Z10 o-work work -O0
+Z11 !s108 1731620499.785000
+Z12 !s107 ADC_tutorial.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontador_7600_vlg_check_tst
+Z13 !s100 1GKfCd4m_XEHDIkY8D38a1
+Z14 ILRbdzgdC>56kJgdO3k_6f0
+Z15 V=TcQW^eXA]oVUBJT_iZaK1
+R4
+Z16 w1731620498
+Z17 8ADC_tutorial.vt
+Z18 FADC_tutorial.vt
+L0 61
+R8
+r1
+31
+Z19 !s108 1731620499.911000
+Z20 !s107 ADC_tutorial.vt|
+Z21 !s90 -work|work|ADC_tutorial.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcontador_7600_vlg_sample_tst
+Z22 !s100 i;8PU>>_b7i7gCKYE5eNJ2
+Z23 Ib0kzACi5:DjJa61KDKm=o3
+Z24 V76n?R7OnZ:VCLnQBZ>@Ab1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcontador_7600_vlg_vec_tst
+Z25 IzHM^YTd@:;DdEKNPX2Y=R1
+Z26 Voe<>IF<=E>@6MAae?8Rdb0
+R4
+R16
+R17
+R18
+Z27 L0 156
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z28 !s100 9bzP_3@WVhWG2z>RVE=MN0
+!i10b 1
+!s85 0
+!s101 -O0
+vdelay_5000
+Z29 !s100 3:@AT`z`_CLQ^3Z7U9ZK`2
+Z30 IGmREVOiij4=mbCcILoN013
+Z31 V>MB>`mPfbNAPP4lE;=MN<0
+Z32 dC:\Users\LSC\Desktop\Main\simulation\qsim
+Z33 w1731696384
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+!s85 0
+Z34 !s108 1731696385.097000
+R12
+!s101 -O0
+vdelay_5000_vlg_check_tst
+!i10b 1
+Z35 !s100 joV4N?i:bK:hISQYMRm8i3
+Z36 IM1dLPgh=ZDP;M2@1DR^D72
+Z37 Ve=_neOJ>dE4<:EOPIUlSY0
+R32
+Z38 w1731696382
+R17
+R18
+L0 61
+R8
+r1
+!s85 0
+31
+Z39 !s108 1731696385.660000
+Z40 !s107 ADC_tutorial.vt|
+R21
+!s101 -O0
+R10
+vdelay_5000_vlg_sample_tst
+!i10b 1
+Z41 !s100 L31@i;NOfRo1V^12[nj2=0
+Z42 IT`HVX<gSIJ3nKWDN7;70A0
+Z43 V?R`ga;SmbkMjlTC6RZ7^>2
+R32
+R38
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R39
+R40
+R21
+!s101 -O0
+R10
+vdelay_5000_vlg_vec_tst
+!i10b 1
+!s100 gkQNQ?dnTlGIYdjUJK?4A0
+IS8gK_^L1mB0M0o;Y[Yj9Z3
+Z44 VW?zQ7PF;alkJ2jfgQVnR30
+R32
+R38
+R17
+R18
+R27
+R8
+r1
+!s85 0
+31
+R39
+R40
+R21
+!s101 -O0
+R10

@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.005
+TNS   : -13.711
+
+Type  : Slow 1200mV 85C Model Setup 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : -0.832
+TNS   : -3.249
+
+Type  : Slow 1200mV 85C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 995.830
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk0'
+Slack : 9.835
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 499.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49999.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.786
+TNS   : -10.348
+
+Type  : Slow 1200mV 0C Model Setup 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : -0.632
+TNS   : -2.262
+
+Type  : Slow 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 996.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk0'
+Slack : 9.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 499.742
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49999.747
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.412
+TNS   : -5.339
+
+Type  : Fast 1200mV 0C Model Setup 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : -0.049
+TNS   : -0.049
+
+Type  : Fast 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 997.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Detector_Cambio_Casilla:inst8|fstate.Casilla_Cambiada'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk0'
+Slack : 9.587
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 499.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst17|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 49999.784
+TNS   : 0.000
+
+------------------------------------------------------------

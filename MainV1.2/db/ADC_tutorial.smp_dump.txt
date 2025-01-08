@@ -1,0 +1,68 @@
+
+State Machine - |main|subsistema_1:inst4|fstate
+Name fstate.Pared_der fstate.Pared_Izq fstate.Centrado fstate.Idle 
+fstate.Idle 0 0 0 0 
+fstate.Centrado 0 0 1 1 
+fstate.Pared_Izq 0 1 0 1 
+fstate.Pared_der 1 0 0 1 
+
+State Machine - |main|Detector_Cambio_Casilla:inst8|fstate
+Name fstate.Casilla_Cambiada fstate.Confirmo_N fstate.Detecto_Negro fstate.Detecto_Blanco fstate.Idle 
+fstate.Idle 0 0 0 0 0 
+fstate.Detecto_Blanco 0 0 0 1 1 
+fstate.Detecto_Negro 0 0 1 0 1 
+fstate.Confirmo_N 0 1 0 0 1 
+fstate.Casilla_Cambiada 1 0 0 0 1 
+
+State Machine - |main|subsistema_3:inst23|fstate
+Name fstate.S00 fstate.S32 fstate.S31 fstate.S30 fstate.S23 fstate.S22 fstate.S21 fstate.S20 fstate.S13 fstate.S12 fstate.S11 fstate.S10 fstate.S03 fstate.S02 fstate.S01 fstate.S33 
+fstate.S33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.S01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.S02 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.S03 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.S10 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.S11 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.S12 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.S13 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.S20 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.S21 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.S22 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.S23 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S30 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S31 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S32 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.S00 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |main|Sistema_De_Orientacion:inst21|fstate
+Name fstate.OESTE_IDLE fstate.ESTE_IDLE fstate.SUR_IDLE fstate.NORTE_IDLE fstate.OESTE fstate.ESTE fstate.SUR fstate.NORTE 
+fstate.NORTE 0 0 0 0 0 0 0 0 
+fstate.SUR 0 0 0 0 0 0 1 1 
+fstate.ESTE 0 0 0 0 0 1 0 1 
+fstate.OESTE 0 0 0 0 1 0 0 1 
+fstate.NORTE_IDLE 0 0 0 1 0 0 0 1 
+fstate.SUR_IDLE 0 0 1 0 0 0 0 1 
+fstate.ESTE_IDLE 0 1 0 0 0 0 0 1 
+fstate.OESTE_IDLE 1 0 0 0 0 0 0 1 
+
+State Machine - |main|bloque_control:inst52|fstate
+Name fstate.forward fstate.giro_der fstate.giro_izq fstate.check 
+fstate.check 0 0 0 0 
+fstate.giro_izq 0 0 1 1 
+fstate.giro_der 0 1 0 1 
+fstate.forward 1 0 0 1 
+
+State Machine - |main|giro_nuevo:inst5|fstate
+Name fstate.confirmo_giro_i fstate.confirmo_giro_d fstate.giro_der fstate.giro_izq fstate.idle 
+fstate.idle 0 0 0 0 0 
+fstate.giro_izq 0 0 0 1 1 
+fstate.giro_der 0 0 1 0 1 
+fstate.confirmo_giro_d 0 1 0 0 1 
+fstate.confirmo_giro_i 1 0 0 0 1 
+
+State Machine - |main|adc:inst1|adc_adc_mega_0:adc_mega_0|altera_up_avalon_adv_adc:ADC_CTRL|currState
+Name currState.doneState currState.transState currState.waitState currState.resetState currState.pauseState 
+currState.resetState 0 0 0 0 0 
+currState.waitState 0 0 1 1 0 
+currState.transState 0 1 0 1 0 
+currState.doneState 1 0 0 1 0 
+currState.pauseState 0 0 0 1 1 

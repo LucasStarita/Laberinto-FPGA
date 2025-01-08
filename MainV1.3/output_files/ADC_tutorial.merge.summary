@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Fri Nov 29 13:56:53 2024
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : ADC_tutorial
+Top-level Entity Name : prueba_sensores
+Family : Cyclone IV E
+Total logic elements : 869 / 22,320 ( 4 % )
+    Total combinational functions : 481 / 22,320 ( 2 % )
+    Dedicated logic registers : 675 / 22,320 ( 3 % )
+Total registers : 675
+Total pins : 32 / 154 ( 21 % )
+Total virtual pins : 0
+Total memory bits : 3,072 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,0 +1,326 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "ADC_tutorial"  ASSIGNED TO AN: EP4CE22F17C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+Mi_Peso14[0]                 : A2        : output : 2.5 V             :         : 8         : N              
+Dir_Min12[0]                 : A3        : output : 2.5 V             :         : 8         : N              
+Mi_Peso13[2]                 : A4        : output : 2.5 V             :         : 8         : N              
+Mi_Peso9[2]                  : A5        : output : 2.5 V             :         : 8         : N              
+Mi_Peso9[0]                  : A6        : output : 2.5 V             :         : 8         : N              
+Mi_Peso_10_[0]               : A7        : output : 2.5 V             :         : 8         : N              
+Sensor_Frente                : A8        : input  : 2.5 V             :         : 8         : Y              
+ADC_DOUT                     : A9        : input  : 2.5 V             :         : 7         : Y              
+ADC_CS_N                     : A10       : output : 2.5 V             :         : 7         : Y              
+Dir_Min4[0]                  : A11       : output : 2.5 V             :         : 7         : N              
+Dir_Min8[0]                  : A12       : output : 2.5 V             :         : 7         : N              
+FW                           : A13       : output : 2.5 V             :         : 7         : N              
+Dir_Min14[0]                 : A14       : output : 2.5 V             :         : 7         : N              
+Mi_Peso5[1]                  : A15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+Mi_Peso14[2]                 : B1        : output : 2.5 V             :         : 1         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+Mi_Peso12[0]                 : B3        : output : 2.5 V             :         : 8         : N              
+Mi_Peso12[2]                 : B4        : output : 2.5 V             :         : 8         : N              
+Mi_Peso13[3]                 : B5        : output : 2.5 V             :         : 8         : N              
+Dir_Min9[0]                  : B6        : output : 2.5 V             :         : 8         : N              
+Mi_Peso9[3]                  : B7        : output : 2.5 V             :         : 8         : N              
+Sensor_Linea                 : B8        : input  : 2.5 V             :         : 8         : Y              
+GND+                         : B9        :        :                   :         : 7         :                
+ADC_DIN                      : B10       : output : 2.5 V             :         : 7         : Y              
+Mi_Peso8[0]                  : B11       : output : 2.5 V             :         : 7         : N              
+Mi_Peso4[3]                  : B12       : output : 2.5 V             :         : 7         : N              
+Dir_Min_10_[1]               : B13       : output : 2.5 V             :         : 7         : N              
+ADC_SCLK                     : B14       : output : 2.5 V             :         : 7         : Y              
+GND                          : B15       : gnd    :                   :         :           :                
+Dir_Min6[1]                  : B16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+Mi_Peso_11_[0]               : C2        : output : 2.5 V             :         : 1         : N              
+Mi_Peso12[1]                 : C3        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+Mi_Peso13[0]                 : C6        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+Mi_Peso_10_[3]               : C8        : output : 2.5 V             :         : 8         : N              
+Mi_Peso8[3]                  : C9        : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+Dir_Min9[1]                  : C11       : output : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+Mi_Peso4[1]                  : C14       : output : 2.5 V             :         : 7         : N              
+Dir_Min8[1]                  : C15       : output : 2.5 V             :         : 6         : N              
+Mi_Peso4[0]                  : C16       : output : 2.5 V             :         : 6         : N              
+Mi_Peso15[3]                 : D1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+Mi_Peso12[3]                 : D3        : output : 2.5 V             :         : 8         : N              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+Mi_Peso15[1]                 : D5        : output : 2.5 V             :         : 8         : N              
+Mi_Peso_11_[1]               : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+Mi_Peso_11_[2]               : D8        : output : 2.5 V             :         : 8         : N              
+Mi_Peso5[3]                  : D9        : output : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+Dir_Min14[1]                 : D11       : output : 2.5 V             :         : 7         : N              
+Dir_Min6[0]                  : D12       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+Dir_Min4[1]                  : D14       : output : 2.5 V             :         : 7         : N              
+Mi_Peso4[2]                  : D15       : output : 2.5 V             :         : 6         : N              
+girar                        : D16       : output : 2.5 V             :         : 6         : N              
+clockcito                    : E1        : input  : 2.5 V             :         : 1         : N              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+Mi_Peso14[3]                 : E6        : output : 2.5 V             :         : 8         : N              
+Mi_Peso14[1]                 : E7        : output : 2.5 V             :         : 8         : N              
+Mi_Peso13[1]                 : E8        : output : 2.5 V             :         : 8         : N              
+Mi_Peso8[1]                  : E9        : output : 2.5 V             :         : 7         : N              
+Dir_Min13[0]                 : E10       : output : 2.5 V             :         : 7         : N              
+Dir_Min5[0]                  : E11       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+Mi_Peso_11_[3]               : F1        : output : 2.5 V             :         : 1         : N              
+menor_vecino_15[1]           : F2        : output : 2.5 V             :         : 1         : N              
+menor_vecino_15[3]           : F3        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+Mi_Peso9[1]                  : F8        : output : 2.5 V             :         : 8         : N              
+Mi_Peso8[2]                  : F9        : output : 2.5 V             :         : 7         : N              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+M1D                          : F13       : output : 2.5 V             :         : 6         : Y              
+Dir_Min5[1]                  : F14       : output : 2.5 V             :         : 6         : N              
+Dir_Min7[1]                  : F15       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+Mi_Peso_10_[2]               : G1        : output : 2.5 V             :         : 1         : N              
+Mi_Peso15[0]                 : G2        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+menor_vecino_15[2]           : G5        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+Dir_Min_11_[1]               : G15       : output : 2.5 V             :         : 6         : N              
+Dir_Min7[0]                  : G16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+altera_reserved_tck          : H3        : input  : 2.5 V             :         : 1         : N              
+altera_reserved_tdi          : H4        : input  : 2.5 V             :         : 1         : N              
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+Mi_Peso6[1]                  : J1        : output : 2.5 V             :         : 2         : N              
+Mi_Peso3[0]                  : J2        : output : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+altera_reserved_tdo          : J4        : output : 2.5 V             :         : 1         : N              
+altera_reserved_tms          : J5        : input  : 2.5 V             :         : 1         : N              
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+Dir_Min_1_[1]                : J13       : output : 2.5 V             :         : 5         : N              
+Mi_Peso_1_[2]                : J14       : output : 2.5 V             :         : 5         : N              
+areset                       : J15       : input  : 2.5 V             :         : 5         : Y              
+Dir_Min3[0]                  : J16       : output : 2.5 V             :         : 5         : N              
+Mi_Peso_10_[1]               : K1        : output : 2.5 V             :         : 2         : N              
+Mi_Peso2[3]                  : K2        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+paredcita                    : K5        : output : 2.5 V             :         : 2         : N              
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+Dir_Min2[1]                  : K15       : output : 2.5 V             :         : 5         : N              
+Dir_Min2[0]                  : K16       : output : 2.5 V             :         : 5         : N              
+Mi_Peso2[2]                  : L1        : output : 2.5 V             :         : 2         : N              
+CONTADORRR                   : L2        : output : 2.5 V             :         : 2         : N              
+LEDS[7]                      : L3        : output : 2.5 V             :         : 2         : Y              
+Mi_Peso15[2]                 : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+Mi_Peso6[2]                  : L7        : output : 2.5 V             :         : 3         : N              
+Mi_Peso6[3]                  : L8        : output : 2.5 V             :         : 3         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+sensor_izq[3]                : L13       : output : 2.5 V             :         : 5         : N              
+sensor_der[0]                : L14       : output : 2.5 V             :         : 5         : N              
+sensor_izq[1]                : L15       : output : 2.5 V             :         : 5         : N              
+sensor_izq[5]                : L16       : output : 2.5 V             :         : 5         : N              
+GND+                         : M1        :        :                   :         : 2         :                
+GND+                         : M2        :        :                   :         : 2         :                
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+Mi_Peso3[3]                  : M6        : output : 2.5 V             :         : 3         : N              
+ini_contador_casilla         : M7        : output : 2.5 V             :         : 3         : N              
+Mi_Peso_1_[1]                : M8        : output : 2.5 V             :         : 3         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+sensor_der[6]                : M10       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+izq_der                      : N1        : output : 2.5 V             :         : 2         : N              
+Dir_Min_10_[0]               : N2        : output : 2.5 V             :         : 2         : N              
+Dir_Min12[1]                 : N3        : output : 2.5 V             :         : 3         : N              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+Mi_Peso7[2]                  : N5        : output : 2.5 V             :         : 3         : N              
+Mi_Peso_1_[3]                : N6        : output : 2.5 V             :         : 3         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+Mi_Peso7[0]                  : N8        : output : 2.5 V             :         : 3         : N              
+Mi_Peso_1_[0]                : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+sensor_der[1]                : N11       : output : 2.5 V             :         : 4         : N              
+sensor_izq[6]                : N12       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+Dir_Min3[1]                  : N14       : output : 2.5 V             :         : 5         : N              
+sensor_der[2]                : N15       : output : 2.5 V             :         : 5         : N              
+sensor_izq[4]                : N16       : output : 2.5 V             :         : 5         : N              
+Dir_Min15[1]                 : P1        : output : 2.5 V             :         : 2         : N              
+Dir_Min15[0]                 : P2        : output : 2.5 V             :         : 2         : N              
+Mi_Peso_0_[2]                : P3        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+Mi_Peso3[2]                  : P6        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+Mi_Peso2[1]                  : P8        : output : 2.5 V             :         : 3         : N              
+Dir_Min_1_[0]                : P9        : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+sensor_der[4]                : P11       : output : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+sensor_izq[7]                : P14       : output : 2.5 V             :         : 4         : N              
+sensor_izq[0]                : P15       : output : 2.5 V             :         : 5         : N              
+sensor_izq[2]                : P16       : output : 2.5 V             :         : 5         : N              
+menor_vecino_15[0]           : R1        : output : 2.5 V             :         : 2         : N              
+GND                          : R2        : gnd    :                   :         :           :                
+Mi_Peso_0_[1]                : R3        : output : 2.5 V             :         : 3         : N              
+Mi_Peso_0_[3]                : R4        : output : 2.5 V             :         : 3         : N              
+Mi_Peso6[0]                  : R5        : output : 2.5 V             :         : 3         : N              
+Dir_Min_11_[0]               : R6        : output : 2.5 V             :         : 3         : N              
+Mi_Peso2[0]                  : R7        : output : 2.5 V             :         : 3         : N              
+clk0                         : R8        : input  : 2.5 V             :         : 3         : Y              
+GND+                         : R9        :        :                   :         : 4         :                
+Dir_Min13[1]                 : R10       : output : 2.5 V             :         : 4         : N              
+Mi_Peso5[2]                  : R11       : output : 2.5 V             :         : 4         : N              
+sensor_der[7]                : R12       : output : 2.5 V             :         : 4         : N              
+veld                         : R13       : output : 2.5 V             :         : 4         : Y              
+sensor_der[3]                : R14       : output : 2.5 V             :         : 4         : N              
+GND                          : R15       : gnd    :                   :         :           :                
+prioridad                    : R16       : output : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+Mi_Peso_0_[0]                : T2        : output : 2.5 V             :         : 3         : N              
+Mi_Peso3[1]                  : T3        : output : 2.5 V             :         : 3         : N              
+dir_correcta                 : T4        : output : 2.5 V             :         : 3         : N              
+Mi_Peso7[1]                  : T5        : output : 2.5 V             :         : 3         : N              
+c_casilla                    : T6        : output : 2.5 V             :         : 3         : N              
+Mi_Peso7[3]                  : T7        : output : 2.5 V             :         : 3         : N              
+GND+                         : T8        :        :                   :         : 3         :                
+GND+                         : T9        :        :                   :         : 4         :                
+Mi_Peso5[0]                  : T10       : output : 2.5 V             :         : 4         : N              
+sensor_der[5]                : T11       : output : 2.5 V             :         : 4         : N              
+veli                         : T12       : output : 2.5 V             :         : 4         : Y              
+M0I                          : T13       : output : 2.5 V             :         : 4         : Y              
+M1I                          : T14       : output : 2.5 V             :         : 4         : Y              
+M0D                          : T15       : output : 2.5 V             :         : 4         : Y              
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

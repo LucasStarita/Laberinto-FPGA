@@ -1,0 +1,9 @@
+|SM3
+reset => forward.DATAIN
+clock => ~NO_FANOUT~
+c_casilla => ~NO_FANOUT~
+forward <= reset.DB_MAX_OUTPUT_PORT_TYPE
+girar <= <GND>
+izq_der <= <GND>
+
+

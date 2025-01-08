@@ -1,0 +1,24 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity paredes is
+    Port (
+        S : in std_logic; 
+        O_1 : in std_logic; 
+        O_0 : in std_logic; 
+		  P_arriba : out std_logic;
+		  P_derecha : out std_logic;
+		  P_abajo : out std_logic;
+		  P_izquierda : out std_logic
+    );
+end paredes;
+
+architecture behavioral of paredes is
+
+begin
+		P_arriba <= S and (not(O_1)) and (not(O_0));
+		P_derecha <= S and (not(O_1)) and O_0 ;
+		P_abajo <= S and O_1 and (not(O_0));
+		P_izquierda <= S and O_1 and O_0 ;
+end behavioral;

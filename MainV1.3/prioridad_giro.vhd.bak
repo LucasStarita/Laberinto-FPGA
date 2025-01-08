@@ -1,0 +1,65 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity prioridad_giro is
+    port (
+        clk        : in  std_logic;
+        reset      : in  std_logic;
+        orientacion: in  std_logic_vector(1 downto 0);
+        dir_min    : in  std_logic_vector(1 downto 0);
+        estado     : out std_logic -- 0 = p_derecha, 1 = p_izquierda
+    );
+end prioridad_giro;
+
+architecture Behavioral of prioridad_giro is
+    type state_type is (p_derecha, p_izquierda);
+    signal current_state, next_state : state_type;
+begin
+
+    -- Transición de estados
+    process (clk, reset)
+    begin
+        if reset = '1' then
+            current_state <= p_derecha;
+        elsif rising_edge(clk) then
+            current_state <= next_state;
+        end if;
+    end process;
+
+    -- Lógica de transición
+    process (current_state, orientacion, dir_min)
+    begin
+        case current_state is
+            when p_derecha =>
+                if cond_p_derecha_a_p_izquierda(orientacion, dir_min) then
+                    next_state <= p_izquierda;
+                else
+                    next_state <= p_derecha;
+                end if;
+
+            when p_izquierda =>
+                if cond_p_izquierda_a_p_derecha(orientacion, dir_min) then
+                    next_state <= p_derecha;
+                else
+                    next_state <= p_izquierda;
+                end if;
+
+            when others =>
+                next_state <= p_derecha; -- Estado por defecto
+        end case;
+    end process;
+
+    -- Salida del estado
+    process (current_state)
+    begin
+        case current_state is
+            when p_derecha =>
+                estado <= '0';
+            when p_izquierda =>
+                estado <= '1';
+            when others =>
+                estado <= '0';
+        end case;
+    end process;
+
+end Behavioral;

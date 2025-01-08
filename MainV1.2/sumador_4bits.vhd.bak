@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity sumador_4bits is
+    port (
+        A, B : in std_logic_vector(3 downto 0); -- Entradas de 4 bits
+        Cin : in std_logic;                    -- Acarreo de entrada
+        S : out std_logic_vector(3 downto 0);  -- Salida de la suma (4 bits)
+        Cout : out std_logic                   -- Acarreo de salida
+    );
+end sumador_4bits;
+
+architecture Behavioral of sumador_4bits is
+begin
+    process(A, B, Cin)
+        variable suma : unsigned(4 downto 0); -- Resultado extendido para manejar el acarreo
+    begin
+        -- Convertimos A, B y Cin a unsigned para la suma
+        suma := unsigned(A) + unsigned(B) + unsigned(Cin);
+
+        -- Asignamos el resultado
+        S <= std_logic_vector(suma(3 downto 0)); -- Los 4 bits menos significativos
+        Cout <= suma(4); -- El bit más significativo como acarreo
+    end process;
+end Behavioral;
